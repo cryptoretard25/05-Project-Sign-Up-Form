@@ -112,7 +112,7 @@ form.form-wrapper {
 .form-wrapper :first-child {
   grid-area: 1/1/2/3;
 }
-.form-wrapper div:nth-child(2){
+.form-wrapper .signup-div{
   -border: 1px solid green;
   width: 90%;
   height: 21.5rem;
@@ -225,7 +225,7 @@ a:active{
     justify-content: center;
   }
 
-  .form-wrapper div:nth-child(2){
+  .form-wrapper .signup-div{
     -border: 1px solid green;
     width: 100%;
     display: flex;
