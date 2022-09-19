@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="background">
+            <div class="logo">
+                <img src="./files/odin-lined.png" alt="">
+                <h1>ODIN</h1>
+            </div>
+        </div>
+        <div class="signup-header">
+            <div class="logo logo02">
+                <img src="./files/odin-lined.png" alt="">
+                <h1>ODIN</h1>
+            </div>
+            <p>This is not a real online service! You know you need something like this in your life to help you realize
+                your deepest dreams.</p>
+            <p>Sign up <i>now</i> to get started.</p>
+            <p>You <i>know</i> you want to.</p>
+        </div>
+        <div class="signup-main">
+            <form class="form-wrapper" id="form-wrapper">
+
+                <legend>Let's do this!</legend>
+                <div>
+                    <label for="firstname">*FIRST NAME</label>
+                    <input required type="text" name="firstname" id="firstname" autocomplete="name">
+                    <label for="email">*EMAIL</label>
+                    <input required type="email" name="email" id="email" autocomplete="email">
+                    <label for="password">*PASSWORD</label>
+                    <input required type="password" name="password" id="password" autocomplete="new-password">
+                    <span id="password-validation" class="error-span"></span>
+                </div>
+                <div>
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" name="lastname" id="lastname" autocomplete="additional-name">
+                    <label for="phone-number">*PHONE NUMBER</label>
+                    <input required type="tel" name="phone-number" id="phone-number" autocomplete="tel">
+                    <label for="confirm-password">*CONFIRM PASSWORD</label>   
+                    <input required type="password" name="confirm-password" id="confirm-password" autocomplete='none' aria-describedby="password-validation"> 
+                </div>
+            </form>
+        </div>
+        <div class="signup-footer">
+            <button class="create-btn" form="form-wrapper">Create Account</button>
+            <p class="footer-p">Already have an account?
+            <a href="https://google.com">Log in</a></p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
