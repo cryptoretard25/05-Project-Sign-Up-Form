@@ -115,7 +115,7 @@ form.form-wrapper {
 .form-wrapper div:nth-child(2){
   -border: 1px solid green;
   width: 90%;
-  height: 22rem;
+  height: 21.5rem;
 
   display: flex;
   flex-direction: column;
