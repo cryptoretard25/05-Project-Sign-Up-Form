@@ -32,11 +32,12 @@ body {
   height: 100vh;
   background: var(--signup-darker);
   padding: 0 8vw;
+  min-width: 40rem;
 }
 
 div.main-container {
   display: grid;
-  grid-template-rows: minmax(28rem, 1fr) minmax(28rem, 1fr) minmax(28rem, 1fr);
+  grid-template-rows: minmax(28rem, 1fr) minmax(30rem, 1fr) minmax(28rem, 1fr);
   grid-template-columns: minmax(15rem, 1fr) minmax(30rem, 2fr);
   height: 100%;
 }
@@ -104,22 +105,24 @@ div.signup-main {
 form.form-wrapper {
   width: 90%;
   -border: 1px solid white;
-
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4rem 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem 20rem;
 }
 .form-wrapper :first-child {
   grid-area: 1/1/2/3;
 }
-.form-wrapper div:nth-child(2),
-.form-wrapper div:nth-child(3) {
+.form-wrapper div:nth-child(2){
   -border: 1px solid green;
   width: 90%;
+  height: 22rem;
 
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+
   align-items: flex-start;
+  justify-content: flex-start;
 }
 
 label {
@@ -137,15 +140,18 @@ legend {
 input {
   font-size: 1.6rem;
   line-height: 1.5;
-  width: 100%;
+  width: 45%;
   border: 1px solid grey;
   border-radius: 0.5rem;
+  border: 3px solid rgba(255, 255, 255);
 }
 
 input:focus {
+
   outline: none;
   border: 3px solid var(--signup-elements);
 }
+
 
 button {
   font-size: 1.6rem;
@@ -207,6 +213,7 @@ a:active{
   div.logo02 {
     background-color: #082032;
     display: flex;
+    min-width: 40rem;
     width: 100vw;
     height: 13rem;
     position: fixed;
@@ -218,10 +225,9 @@ a:active{
     justify-content: center;
   }
 
-  .form-wrapper div:nth-child(2),
-  .form-wrapper div:nth-child(3) {
+  .form-wrapper div:nth-child(2){
     -border: 1px solid green;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
